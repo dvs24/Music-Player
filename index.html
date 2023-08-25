@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="images/logo.jpg" alt=""></li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Playlist of Top Songs</h1>
+        <div class="songList">
+            <div class="songs">
+                <img src="images\cover1.jpg" class="coverImage">
+                <span class="songName">song1</span>
+                <span class="duration">5:56</span>
+                <span><i style="color: white;" id="1" class="fa-solid songIcon fa-play"></i></span>
+            </div>
+            <div class="songs">
+                <img src="images\cover2.jpg" class="coverImage">
+                <span class="songName">song2</span>
+                <span class="duration">3:00</span>
+                <span><i style="color: white;" id="2" class="fa-solid songIcon fa-play"></i></span>
+            </div>
+            <div class="songs">
+                <img src="images\cover3.jpg" class="coverImage">
+                <span class="songName">song3</span>
+                <span class="duration">2:31</span>
+                <span><i style="color: white;" id="3" class="fa-solid songIcon fa-play"></i></span>
+            </div>
+            <div class="songs">
+                <img src="images\cover1.jpg" class="coverImage">
+                <span class="songName">song4</span>
+                <span class="duration">8:20</span>
+                <span><i style="color: white;" id="4" class="fa-solid songIcon fa-play"></i></span>
+            </div>
+            <div class="songs">
+                <img src="images\cover2.jpg" class="coverImage">
+                <span class="songName">song5</span>
+                <span class="duration">2:02</span>
+                <span><i style="color: white;" id="5" class="fa-solid songIcon fa-play"></i></span>
+            </div>
+            <div class="songs">
+                <img src="images\cover3.jpg" class="coverImage">
+                <span class="songName">song6</span>
+                <span class="duration">1:33</span>
+                <span><i style="color: white;" id="6" class="fa-solid songIcon fa-play"></i></span>
+            </div>
+            <div class="songs">
+                <img src="images\cover1.jpg" class="coverImage">
+                <span class="songName">song7</span>
+                <span class="duration">2:48</span>
+                <span><i style="color: white;" id="7" class="fa-solid songIcon fa-play"></i></span>
+            </div>
+            <div class="songs">
+                <img src="images\cover2.jpg" class="coverImage">
+                <span class="songName">song8</span>
+                <span class="duration">0:30</span>
+                <span><i style="color: white;" id="8" class="fa-solid songIcon fa-play"></i></span>
+            </div>
+            <div class="songs">
+                <img src="images\cover3.jpg" class="coverImage">
+                <span class="songName">song9</span>
+                <span class="duration">2:22</span>
+                <span><i style="color: white;" id="9" class="fa-solid songIcon fa-play"></i></span>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="button">
+        <input type="range" name="range" id="progressBar" min="0" max="100" value="0">
+        <div class="icons">
+            <i style="color: white;" id="prevIcon" class="fa-solid fa-2x fa-backward-fast"></i>
+            <i style="color: white;" class="fa-solid fa-2x fa-play" id="mainPlay"></i>
+            <i style="color: white;" id="nextIcon" class="fa-solid fa-2x fa-forward-fast"></i>
+        </div>
+        <div class="songInfo">
+            <img src="images/playing.gif" id="gif"> <span id="mainSongName">song1</span>
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/e1a17362a9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
